@@ -52,7 +52,7 @@ else:
     
 
     
-OPENAI_API = environ.get('OPENAI_API', '')
+OPENAI_API = environ.get('OPENAI_API', 'true')
 if len(OPENAI_API) == 0:
     logging.error('OPENAI_API is missing, exiting now')
     exit()
