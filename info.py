@@ -50,7 +50,7 @@ if len(LOG_CHANNEL) == 0:
 else:
     LOG_CHANNEL = int(LOG_CHANNEL)
     
-SUPPORT_GROUP = environ.get('SUPPORT_GROUP', 'FmDiscusss')
+SUPPORT_GROUP = environ.get('SUPPORT_GROUP', 'https://t.me/fmdiscusss')
 if len(SUPPORT_GROUP) == 0:
     logging.error('SUPPORT_GROUP is missing, exiting now')
     exit()
@@ -72,7 +72,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
 SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/syrus_143_hpy')
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/@Filmy_Men')
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/Filmy_Men')
 
 # Bot settings
 AUTO_FILTER = is_enabled((environ.get('AUTO_FILTER', "True")), True)
