@@ -7,9 +7,9 @@ class script(object):
 ★ Library: <a href=https://pyrogram.org>Pyrogram</a>"""
 
     MY_OWNER_TXT = """★ Name: Hansaka Anuhas
-★ Username: @Hansaka_Anuhas
+★ Username: @Syrus_143_Hpy
 ★ ID: <code>5493832202</code>
-★ Country: Sri Lanka 🇱🇰"""
+★ Country: India 🇮🇳"""
 
     STATUS_TXT = """🗂 Total Files: <code>{}</code>
 👤 Total Users: <code>{}</code>
