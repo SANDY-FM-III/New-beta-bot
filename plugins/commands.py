@@ -89,7 +89,7 @@ async def start(client, message):
         return
 
     if mc.startswith('verify'):
-        _, token = mc.split("_", 1)
+        _, token = mc.split("_", 2)
         verify_status = await get_verify_status(message.from_user.id)
         if verify_status['verify_token'] != token:
             return await message.reply("Your verify token is invalid.")
