@@ -50,7 +50,7 @@ async def give_filter(client, message):
             files, offset, total = await get_search_results(message.text, offset=0, filter=True)
             if files:
                 btn = [[
-                    InlineKeyboardButton("Here", url='https://t.me/Filmy_Men')
+                    InlineKeyboardButton("Here", url='https://t.me/FilmyMen_Request')
                 ]]
                 await message.reply_text(f'Total {total} results found in this group', reply_markup=InlineKeyboardMarkup(btn))
             return
@@ -197,7 +197,7 @@ async def next_page(bot, query):
                 files_link += f"""<b>\n\n‼️ <a href={await get_shortlink(settings['url'], settings['api'], f'https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file.file_id}')}>[{get_size(file.file_size)}] {file.file_name}</a></b>"""
         else:
             btn = [[
-                InlineKeyboardButton(text=f"✨ {get_size(file.file_size)} ⚡️ {file.file_name}", url=await get_shortlink(settings['url'], settings['api'], f'https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file.file_id}'))
+                InlineKeyboardButton(text=f"➣ {get_size(file.file_size)} ◉ {file.file_name}", url=await get_shortlink(settings['url'], settings['api'], f'https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file.file_id}'))
             ]
                 for file in files
             ]
@@ -211,7 +211,7 @@ async def next_page(bot, query):
                 files_link += f"""<b>\n\n‼️ <a href=https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file.file_id}>[{get_size(file.file_size)}] {file.file_name}</a></b>"""
         else:
             btn = [[
-                InlineKeyboardButton(text=f"✨ {get_size(file.file_size)} ⚡️ {file.file_name}", callback_data=f'file#{file.file_id}')
+                InlineKeyboardButton(text=f"➣ {get_size(file.file_size)} ◉ {file.file_name}", callback_data=f'file#{file.file_id}')
             ]
                 for file in files
             ]
@@ -308,7 +308,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
                 files_link += f"""<b>\n\n‼️ <a href={await get_shortlink(settings['url'], settings['api'], f'https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file.file_id}')}>[{get_size(file.file_size)}] {file.file_name}</a></b>"""
         else:
             btn = [[
-                InlineKeyboardButton(text=f"✨ {get_size(file.file_size)} ⚡️ {file.file_name}", url=await get_shortlink(settings['url'], settings['api'], f'https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file.file_id}'))
+                InlineKeyboardButton(text=f"➣ {get_size(file.file_size)} ◉ {file.file_name}", url=await get_shortlink(settings['url'], settings['api'], f'https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file.file_id}'))
             ]
                 for file in files
             ]
@@ -322,7 +322,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
                 files_link += f"""<b>\n\n‼️ <a href=https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file.file_id}>[{get_size(file.file_size)}] {file.file_name}</a></b>"""
         else:
             btn = [[
-                InlineKeyboardButton(text=f"✨ {get_size(file.file_size)} ⚡️ {file.file_name}", callback_data=f'file#{file.file_id}')
+                InlineKeyboardButton(text=f"➣ {get_size(file.file_size)} ◉ {file.file_name}", callback_data=f'file#{file.file_id}')
             ]
                 for file in files
             ]
@@ -383,7 +383,7 @@ async def lang_next_page(bot, query):
                 files_link += f"""<b>\n\n‼️ <a href={await get_shortlink(settings['url'], settings['api'], f'https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file.file_id}')}>[{get_size(file.file_size)}] {file.file_name}</a></b>"""
         else:
             btn = [[
-                InlineKeyboardButton(text=f"✨ {get_size(file.file_size)} ⚡️ {file.file_name}", url=await get_shortlink(settings['url'], settings['api'], f'https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file.file_id}'))
+                InlineKeyboardButton(text=f"➣ {get_size(file.file_size)} ◉ {file.file_name}", url=await get_shortlink(settings['url'], settings['api'], f'https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file.file_id}'))
             ]
                 for file in files
             ]
@@ -397,7 +397,7 @@ async def lang_next_page(bot, query):
                 files_link += f"""<b>\n\n‼️ <a href=https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file.file_id}>[{get_size(file.file_size)}] {file.file_name}</a></b>"""
         else:
             btn = [[
-                InlineKeyboardButton(text=f"✨ {get_size(file.file_size)} ⚡️ {file.file_name}", callback_data=f'file#{file.file_id}')
+                InlineKeyboardButton(text=f"➣ {get_size(file.file_size)} ◉ {file.file_name}", callback_data=f'file#{file.file_id}')
             ]
                 for file in files
             ]
